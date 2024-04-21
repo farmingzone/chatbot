@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#chat-box .message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    float: right; /* 오른쪽으로 흐르게 함 */
+    clear: both; /* 다른 float 속성과 겹치지 않도록 설정 */
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.bot-message {
+    background-color: #e9e9eb;
+    color: black;
+    float: left; /* 왼쪽으로 흐르게 함 */
+    clear: both; /* 다른 float 속성과 겹치지 않도록 설정 */
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    max-width: 70%;
+}
+
+#chat-input {
+    padding: 10px;
+    border: none;
+    flex-shrink: 0;
+    width: calc(100% - 20px);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
